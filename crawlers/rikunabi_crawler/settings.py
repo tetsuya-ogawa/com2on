@@ -18,13 +18,16 @@ ITEM_PIPELINES = {
     's3pipeline.S3Pipeline': 1,
 }
 
+S3PIPELINE_MAX_CHUNK_SIZE = 200
+
 # S3PIPELINE_URL = 's3://r-companies/{name}/{time}/items.{chunk:07d}.jl.gz'
 
 # ITEM_PIPELINES = {
 #     'scrapy.pipelines.files.S3FilesStore': 1,
 # }
 
-S3PIPELINE_URL = 's3://r-companies/{name}/{time}/items.{chunk:07d}.json'
+# S3PIPELINE_URL = 's3://r-companies/{name}/{time}/items.{chunk:07d}.json'
+S3PIPELINE_URL = 's3://r-companies/{name}/items.{chunk:08d}.json'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
