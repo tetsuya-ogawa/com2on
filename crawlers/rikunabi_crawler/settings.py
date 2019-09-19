@@ -18,7 +18,7 @@ ITEM_PIPELINES = {
     's3pipeline.S3Pipeline': 1,
 }
 
-S3PIPELINE_MAX_CHUNK_SIZE = 200
+S3PIPELINE_MAX_CHUNK_SIZE = 100
 
 # S3PIPELINE_URL = 's3://r-companies/{name}/{time}/items.{chunk:07d}.jl.gz'
 
